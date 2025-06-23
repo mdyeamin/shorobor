@@ -8,8 +8,8 @@
     <title>Shorobor</title>
     <link rel="stylesheet" href="style.css">
 
-<!-- fontawesome  -->
- <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
     <!-- tailwind cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- custom style  -->
@@ -122,13 +122,13 @@
                                 <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
                                 <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
                                 <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
-
                             </div>
                             <!-- timer end -->
                             <!-- it will be hidden -->
                             <div class="add-card flex items-center justify-between my-1">
                                 <div class="add_to_card">
-                                    <button class="flex items-center justify-center card-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                    <button
+                                        class="flex items-center justify-center card-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                         <span class="AddToCart">Add To Cart</span>
                                         <span class="card-icon "><i class="fa-solid fa-cart-shopping"></i></span>
                                     </button>
@@ -364,15 +364,532 @@
 
 
 
-    <!-- slider Products 1 start  -->
+    <!-- slider Products 3 start  -->
     <section class="max-w-6xl mx-auto">
         <!-- Slider 3 -->
-        <div class="swiper mySwiper" data-swiper-id="slider3" data-breakpoints='{"640":1,"768":2,"1024":3}'>
+        <div class="swiper mySwiper" data-swiper-id="slider3" data-breakpoints='{"640":6,"768":6,"1024":6}'>
             <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/carousel-1.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/carousel-2.png" alt=""></div>
-                <div class="swiper-slide"><img src="images/carousel-3.png" alt=""></div>
-            </div>
+                <!-- slide 1 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-1.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 2 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-2.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 3 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-3.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 4 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-4.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 5 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-5.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 6 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-6.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 7 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-7.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 8 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-8.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 9 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-9.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 10 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-10.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 11 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-11.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide 12 -->
+                <div class="swiper-slide">
+                    <div class="combo-best-card col-span-2 bg-white rounded-lg max-md:my-5">
+                        <div class="">
+                            <figure>
+                                <img class="rounded-lg" class="w-fit" src="images/best-12.jpg" alt="">
+                            </figure>
+                            <div class="px-4 card-best-title flex-col items-end">
+                                <h4 class="text-sm font-medium my-1">Lichi flower honey</h4>
+                                <!-- price  -->
+                                <div class="price-area flex items-center justify-between my-3">
+                                    <div class="font-medium text-sm price--line-through">15,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                    <div class="font-medium text-lg price text-sky-600">10,000 <i
+                                            class="fa-solid fa-bangladeshi-taka-sign"></i> </div>
+                                </div>
+                                <!-- price end  -->
+                                <!-- timer -->
+                                <!-- <div class=" flex items-center justify-between my-1">
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Days</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Hr</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Min</span></div>
+                                    <div class="font-medium text-xs "><span>00</span> <br> <span>Sc</span></div>
+                                </div> -->
+                                <!-- timer end -->
+                                <!-- it will be hidden -->
+                                <div class="add-best-card flex items-center justify-between my-1">
+                                    <div class="add_to_card">
+                                        <button
+                                            class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
+                                            <span class="AddToCart-best">Add To Cart</span>
+                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                        </button>
+
+                                    </div>
+                                    <div class="" title="Quick view">
+                                        <i class="fa-solid fa-eye"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+
+
+
+
             <div class="swiper-button-prev" data-swiper-id="slider3"></div>
             <div class="swiper-button-next" data-swiper-id="slider3"></div>
         </div>
