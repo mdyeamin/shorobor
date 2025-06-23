@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide bg-white p-4 rounded shadow">Item 1</div>
+            <!-- Slide 2 -->
+            <div class="swiper-slide bg-white p-4 rounded shadow">Item 2</div>
+            <!-- Slide 3 -->
+            <div class="swiper-slide bg-white p-4 rounded shadow">Item 3</div>
+            <!-- Add more slides -->
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+
+
+        <script>
+            const swiper = new Swiper(".mySwiper", {
+                slidesPerView: 3, // show 3 items at a time
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev"
+                },
+                breakpoints: {
+                    640: { slidesPerView: 2 },
+                    1024: { slidesPerView: 3 },
+                    1280: { slidesPerView: 4 },
+                }
+            });
+        </script>
+        <!-- Swiper JS -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    </div>
+
+</body>
+
+</html>

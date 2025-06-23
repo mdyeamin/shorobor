@@ -4,69 +4,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>Shorobor</title>
+    <link rel="stylesheet" href="style.css">
     <!-- daisyui cdn  -->
-     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- tailwind cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<!-- custom style  -->
+    <!-- custom style  -->
     <style type="text/tailwindcss">
         @theme {
         --color-clifford: #da373d;
       }
     </style>
+    <!-- swiper style  -->
+    <style>
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #444;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+
+    <!-- swiperjs  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 
 <body>
 
-<!-- header Carousel start  -->
- <section class="max-w-6xl mx-auto">
+    <!-- header Carousel start  -->
+    <section class="max-w-6xl mx-auto">
 
-<div class="carousel w-full">
-  <div id="slide1" class="carousel-item relative w-full">
-    <img
-      src="images/carousel-1.png"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide4" class="btn btn-circle">❮</a>
-      <a href="#slide2" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide2" class="carousel-item relative w-full">
-    <img
-      src="images/carousel-2.png"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide1" class="btn btn-circle">❮</a>
-      <a href="#slide3" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <div id="slide3" class="carousel-item relative w-full">
-    <img
-      src="images/carousel-3.png"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide2" class="btn btn-circle">❮</a>
-      <a href="#slide4" class="btn btn-circle">❯</a>
-    </div>
-  </div>
-  <!-- <div id="slide4" class="carousel-item relative w-full">
-    <img
-      src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
-      class="w-full" />
-    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-      <a href="#slide3" class="btn btn-circle">❮</a>
-      <a href="#slide1" class="btn btn-circle">❯</a>
-    </div>
-  </div> -->
-</div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/carousel-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/carousel-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/carousel-3.png" alt=""></div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
 
- </section>
-<!-- header Carousel end  -->
+    </section>
+    <!-- header Carousel end  -->
 
+    <!-- circle swipe start  -->
+    <section class="max-w-6xl mx-auto flex flex-col items-center justify-center ">
+
+
+
+    </section>
+    <!-- circle swipe end -->
 
 
     <!-- footer start  -->
@@ -190,6 +197,34 @@
         </div>
     </footer>
     <!-- footer end  -->
+
+
+    <!-- swiperjs  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        
+        // header carousel 
+        var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+
+        // circle carousel
+
+
+    </script>
 </body>
 
 </html>
