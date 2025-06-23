@@ -7,9 +7,8 @@
 
     <title>Shorobor</title>
     <link rel="stylesheet" href="style.css">
-    <!-- daisyui cdn  -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    
     <!-- tailwind cdn  -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- custom style  -->
@@ -20,26 +19,7 @@
     </style>
     <!-- swiper style  -->
     <style>
-        .swiper {
-            width: 100%;
-            height: 100%;
-        }
-
-        .swiper-slide {
-            text-align: center;
-            font-size: 18px;
-            background: #444;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .swiper-slide img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+       
     </style>
 
     <!-- swiperjs  -->
@@ -53,16 +33,47 @@
     <!-- header Carousel start  -->
     <section class="max-w-6xl mx-auto">
 
-        <div class="swiper mySwiper">
+        <!-- Slider 1 -->
+        <div class="swiper mySwiper" data-swiper-id="slider1" data-breakpoints='{"640":1,"768":1,"1024":1}'>
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="images/carousel-1.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/carousel-2.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/carousel-3.png" alt=""></div>
-                
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-prev" data-swiper-id="slider1"></div>
+            <div class="swiper-button-next" data-swiper-id="slider1"></div>
         </div>
+
+        <!-- Slider 2 -->
+        <div class="swiper mySwiper my-20" data-swiper-id="slider2" data-breakpoints='{"640":4,"768":6,"1024":8}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-1.png" alt=""> <p class="text-center text-sm">Spices</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-2.png" alt=""> <p class="text-center text-sm">Oil | তেল</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-3.png" alt=""> <p class="text-center text-sm">Household</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-4.png" alt=""> <p class="text-center text-sm">Honey | মধু</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-5.png" alt=""> <p class="text-center text-sm">Herbal Products</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-6.png" alt=""> <p class="text-center text-sm">Groceries</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-7.png" alt=""> <p class="text-center text-sm">Ghee | ঘি</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-8.png" alt=""> <p class="text-center text-sm">Fish & Meat</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-9.png" alt=""> <p class="text-center text-sm">Duck</p> </div>
+                <div class="swiper-slide"><img class="rounded-full" src="images/circle-10.png" alt=""> <p class="text-center text-sm">Beauty Products</p> </div>
+               
+            </div>
+            <div class="swiper-button-prev" data-swiper-id="slider2"></div>
+            <div class="swiper-button-next" data-swiper-id="slider2"></div>
+        </div>
+
+        <!-- Slider 3 -->
+        <div class="swiper mySwiper" data-swiper-id="slider3" data-breakpoints='{"640":1,"768":2,"1024":3}'>
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/carousel-1.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/carousel-2.png" alt=""></div>
+                <div class="swiper-slide"><img src="images/carousel-3.png" alt=""></div>
+            </div>
+            <div class="swiper-button-prev" data-swiper-id="slider3"></div>
+            <div class="swiper-button-next" data-swiper-id="slider3"></div>
+        </div>
+
 
     </section>
     <!-- header Carousel end  -->
@@ -202,29 +213,39 @@
     <!-- swiperjs  -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        
-        // header carousel 
-        var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-    });
+        document.querySelectorAll(".mySwiper").forEach((swiperEl) => {
+            const id = swiperEl.dataset.swiperId;
 
-        // circle carousel
+            // Parse breakpoints from data attribute
+            const rawBreakpoints = swiperEl.dataset.breakpoints;
+            let breakpoints = {};
+
+            try {
+                const parsed = JSON.parse(rawBreakpoints);
+                Object.keys(parsed).forEach(key => {
+                    breakpoints[key] = {
+                        slidesPerView: parsed[key],
+                        spaceBetween: 20  // optional: can be customized too
+                    };
+                });
+            } catch (e) {
+                console.warn("Invalid breakpoints JSON in slider:", id);
+            }
 
 
+            new Swiper(swiperEl, {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: `.swiper-button-next[data-swiper-id="${id}"]`,
+                    prevEl: `.swiper-button-prev[data-swiper-id="${id}"]`,
+                },
+                breakpoints: breakpoints
+            });
+        });
     </script>
+
 </body>
 
 </html>

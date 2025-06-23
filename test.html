@@ -10,42 +10,55 @@
 </head>
 
 <body>
-    <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-            <!-- Slide 1 -->
-            <div class="swiper-slide bg-white p-4 rounded shadow">Item 1</div>
-            <!-- Slide 2 -->
-            <div class="swiper-slide bg-white p-4 rounded shadow">Item 2</div>
-            <!-- Slide 3 -->
-            <div class="swiper-slide bg-white p-4 rounded shadow">Item 3</div>
-            <!-- Add more slides -->
-        </div>
-
-        <!-- Navigation Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-
-
-        <script>
-            const swiper = new Swiper(".mySwiper", {
-                slidesPerView: 3, // show 3 items at a time
-                spaceBetween: 20,
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev"
-                },
-                breakpoints: {
-                    640: { slidesPerView: 2 },
-                    1024: { slidesPerView: 3 },
-                    1280: { slidesPerView: 4 },
-                }
-            });
-        </script>
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <section class="w-full max-w-7xl mx-auto my-10">
+  <div class="swiper categorySwiper relative px-6">
+    <!-- Slides wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slide -->
+      <div class="swiper-slide flex flex-col items-center">
+        <img src="images/circle-1.png" alt="Spices" class="w-20 h-20 object-cover rounded-full" />
+        <p class="mt-2 text-sm text-center font-medium">SPICES</p>
+      </div>
+      <div class="swiper-slide flex flex-col items-center">
+        <img src="images/circle-2.png" alt="Oil" class="w-20 h-20 object-cover rounded-full" />
+        <p class="mt-2 text-sm text-center font-medium">OIL | তেল</p>
+      </div>
+      <!-- Add more slides as needed -->
     </div>
 
+    <!-- Arrows -->
+    <div class="swiper-button-prev !text-gray-600 !left-0"></div>
+    <div class="swiper-button-next !text-gray-600 !right-0"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination mt-4"></div>
+  </div>
+</section>
+
+        <script>
+  const swiper = new Swiper(".categorySwiper", {
+    slidesPerView: 5,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    breakpoints: {
+      640: { slidesPerView: 3 },
+      768: { slidesPerView: 4 },
+      1024: { slidesPerView: 5 },
+      1280: { slidesPerView: 6 }
+    }
+  });
+</script>
+
+<!-- swiperjs  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   
 </body>
 
 </html>
