@@ -31,8 +31,212 @@
 
 <body>
 
+
+    <!-- navigation start  -->
+    <nav class="  bg-sky-600 p-10">
+        <div class="max-w-6xl mx-auto flex items-center justify-around gap-5">
+            <div class="logo w-80 ">
+                <img src="images/shorobor_logo-1.png" alt="">
+            </div>
+            <div class="w-full">
+
+                <form class="mx-auto">
+                    <label for="default-search"
+                        class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Search</label>
+                    <div class="relative">
+                        <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                        <input type="search" id="default-search"
+                            class="block w-full p-4  ps-10 text-sm text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                            placeholder="Search Mockups, Logos..." required />
+                        <button type="submit"
+                            class="text-white absolute end-2.5 bottom-2.5 bg-sky-600 hover:bg-sky-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                    </div>
+                </form>
+
+            </div>
+            <div class="">
+                <button
+                    class="bg-white w-28 text-gray-800 border border-gray-300 hover:bg-gray-100 px-4 py-2 rounded-lg shadow-sm transition duration-200">
+                    <span class="flex flex-row items-center justify-center">
+                        <span><i class="fa-solid fa-land-mine-on mr-2"></i></span>
+                        <span>OFFER</span>
+                    </span>
+                </button>
+
+            </div>
+            <div class=" ">
+                <button class="btn btn-blue border rounded-full p-3 border-white text-white ">
+                    <span class="flex flex-row items-center justify-center">
+                        <span>
+                            <i class="fa-solid fa-user mr-2"></i>
+                        </span>
+                        <span>Login/Register</span>
+                    </span>
+                </button>
+            </div>
+            <div class="price">
+                <button
+                    class="bg-white w-28 text-gray-800 border border-gray-300 hover:bg-gray-100 px-4 py-2 rounded-full shadow-sm transition duration-200">
+                    <span class="flex flex-row items-center justify-center">
+                        <span><i class="fa-solid fa-bag-shopping mr-2 text-sky-600"></i></span>
+                        <span class="text-sky-600"> 0.00</span>
+                        <span class="text-sky-600 text-xs"><i class="fa-solid fa-bangladeshi-taka-sign"></i></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <!-- navigation drowdown navigation  -->
+        <div class=" mt-5">
+            <ul class="flex justify-center space-x-8 relative z-50">
+
+                <!-- Main dropdown -->
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        All Products
+                    </button>
+
+
+                </li>
+
+
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        Beauty Products
+                        <i
+                            class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+                    </div>
+                </li>
+
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        Ghee
+                    </button>
+                </li>
+
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        Fish & Meat
+                        <i
+                            class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+                    </div>
+                </li>
+
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        Grocery
+                        <i
+                            class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+                    </div>
+                </li>
+
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        Herbal
+                    </button>
+                </li>
+
+
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        Honey
+                        <i
+                            class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+                    </div>
+                </li>
+
+
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        Oil
+                        <i
+                            class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+                    </div>
+                </li>
+
+
+                <li class="relative group">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        OFFER
+                    </button>
+
+                </li>
+
+
+                <!-- store drondown nested  {to open this li please remove the "hidden"class}-->
+                <li class="relative group hidden">
+                    <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+                        Beauty Products
+                        <i
+                            class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+                    </button>
+
+                    <!-- Dropdown -->
+                    <div
+                        class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+
+                        <!-- Nested dropdown -->
+                        <div class="relative group/nested">
+                            <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+                                SEO
+                                <i
+                                    class="fa-solid fa-angle-right text-xs transition-transform group-hover/nested:translate-x-1"></i>
+                            </a>
+                            <div
+                                class="absolute top-0 left-full mt-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition duration-300 z-50">
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">On Page</a>
+                                <a href="#" class="block px-4 py-2 hover:bg-gray-100">Off Page</a>
+                            </div>
+                        </div>
+
+                        <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+                    </div>
+                </li>
+
+
+                <!-- store drondown nested end -->
+            </ul>
+
+        </div>
+
+    </nav>
+    <!-- navigation end  -->
+
     <!-- header Carousel start  -->
-    <section class="max-w-6xl mx-auto">
+    <section class="max-w-6xl mx-auto my-10">
 
         <!-- Slider 1 -->
         <div class="swiper mySwiper" data-swiper-id="slider1" data-breakpoints='{"640":1,"768":1,"1024":1}'>
@@ -41,8 +245,26 @@
                 <div class="swiper-slide"><img src="images/carousel-2.png" alt=""></div>
                 <div class="swiper-slide"><img src="images/carousel-3.png" alt=""></div>
             </div>
-            <div class="swiper-button-prev" data-swiper-id="slider1"></div>
-            <div class="swiper-button-next" data-swiper-id="slider1"></div>
+            <!-- <div class="swiper-button-prev" data-swiper-id="slider1"><i class="fa-solid fa-arrow-right"></i></div>
+            <div class="swiper-button-next" data-swiper-id="slider1"></div> -->
+
+            <div class="absolute top-1/2 -left-6 -right-6 md:-left-2 md:-right-2 flex justify-between px-4 z-20 -translate-y-1/2">
+
+                <!-- Prev Button -->
+                <div class="group custom-button-next cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+                    data-swiper-id="slider1">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </div>
+
+                <!-- Next Button -->
+                <div class="group custom-button-prev cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+                    data-swiper-id="slider1">
+                   <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+            </div>
+
+
         </div>
 
 
@@ -50,7 +272,7 @@
     <!-- header Carousel end  -->
 
     <!-- circle swipe start  -->
-    <section class="max-w-6xl mx-auto ">
+    <section class="max-w-6xl mx-auto relative">
 
         <!-- Slider 2 -->
         <div class="swiper mySwiper my-20" data-swiper-id="slider2" data-breakpoints='{"640":8,"768":8,"1024":8}'>
@@ -87,14 +309,27 @@
                 </div>
 
             </div>
-            <div class="swiper-button-prev" data-swiper-id="slider2"></div>
-            <div class="swiper-button-next" data-swiper-id="slider2"></div>
+        </div>
+        <div class="absolute top-1/2 -left-8 -right-6 md:-left-12 md:-right-12 flex justify-between px-4 z-50 -translate-y-1/2">
+            <!-- Prev Button -->
+            <div class="group custom-button-next cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+                data-swiper-id="slider2">
+                <i class="fa-solid fa-arrow-left text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+            </div>
+
+            <!-- Next Button -->
+            <div class="group custom-button-prev cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+                data-swiper-id="slider2">
+                <i
+                    class="fa-solid fa-arrow-right text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+            </div>
+
         </div>
 
     </section>
     <!-- circle swipe end -->
 
-    
+
     <!-- combo offer card start-->
     <section class="max-w-6xl mx-auto my-10 bg-sky-600 rounded-xl pb-3">
         <div class="combo-section container lg:px-5 mx-auto my-10">
@@ -360,14 +595,15 @@
         </div>
     </section>
     <!-- combo offer card end-->
-    
+
 
 
 
     <!--  Best Hair & Skin Care Products start  -->
-    <section class="max-w-6xl mx-auto">
+    <section class="relative max-w-6xl mx-auto">
         <!-- Slider 3 -->
-         <h4 class="text-lg font-semibold my-5"><i class=" mr-3 fa-solid fa-arrow-right text-sky-600"></i> Best Hair & Skin Care Products</h4>
+        <h4 class="text-lg font-semibold my-5"><i class=" mr-3 fa-solid fa-arrow-right text-sky-600"></i> Best Hair &
+            Skin Care Products</h4>
         <div class="swiper mySwiper" data-swiper-id="slider3" data-breakpoints='{"640":4,"768":4,"1024":6}'>
             <div class="swiper-wrapper">
                 <!-- slide 1 -->
@@ -401,7 +637,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -444,7 +681,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -487,7 +725,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -530,7 +769,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -573,7 +813,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -616,7 +857,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -659,7 +901,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -702,7 +945,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -745,7 +989,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -788,7 +1033,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -831,7 +1077,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -874,7 +1121,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -886,21 +1134,32 @@
                         </div>
                     </div>
                 </div>
-               </div>
+            </div>
 
+        </div>
+        <div class="absolute top-1/2 -left-8 -right-6 md:-left-12 md:-right-12 flex justify-between px-4 z-50 -translate-y-1/2">
+            <!-- Prev Button -->
+            <div class="group custom-button-next cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+                data-swiper-id="slider3">
+                <i class="fa-solid fa-arrow-left text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+            </div>
 
+            <!-- Next Button -->
+            <div class="group custom-button-prev cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+                data-swiper-id="slider3">
+                <i
+                    class="fa-solid fa-arrow-right text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+            </div>
 
-
-            <div class="swiper-button-prev" data-swiper-id="slider3"></div>
-            <div class="swiper-button-next" data-swiper-id="slider3"></div>
         </div>
     </section>
     <!--  Best Hair & Skin Care Products end  -->
-      <!-- DAILY BAZAR start  -->
-<section class="max-w-6xl mx-auto mt-10">
+    <!-- DAILY BAZAR start  -->
+    <section class="relative max-w-6xl mx-auto mt-10">
         <!-- Slider 3 -->
-         <h4 class="text-lg font-semibold my-5"><i class=" mr-3 fa-solid fa-arrow-right text-sky-600"></i> DAILY BAZAR</h4>
-        <div class="swiper mySwiper" data-swiper-id="slider3" data-breakpoints='{"640":4,"768":4,"1024":6}'>
+        <h4 class="text-lg font-semibold my-5"><i class=" mr-3 fa-solid fa-arrow-right text-sky-600"></i> DAILY BAZAR
+        </h4>
+        <div class="swiper mySwiper" data-swiper-id="slider4" data-breakpoints='{"640":6,"768":6,"1024":6}'>
             <div class="swiper-wrapper">
                 <!-- slide 1 -->
                 <div class="swiper-slide">
@@ -933,7 +1192,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -976,7 +1236,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1019,7 +1280,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1062,7 +1324,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1105,7 +1368,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1148,7 +1412,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1191,7 +1456,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1234,7 +1500,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1277,7 +1544,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1320,7 +1588,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1363,7 +1632,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1406,7 +1676,8 @@
                                         <button
                                             class="flex items-center justify-center card-best-btn hover:bg-sky-600 rounded-lg text-white btn btn-sm bg-sky-600 ">
                                             <span class="AddToCart-best">Add To Cart</span>
-                                            <span class="card-best-icon "><i class="fa-solid fa-cart-shopping"></i></span>
+                                            <span class="card-best-icon "><i
+                                                    class="fa-solid fa-cart-shopping"></i></span>
                                         </button>
 
                                     </div>
@@ -1418,79 +1689,91 @@
                         </div>
                     </div>
                 </div>
-               </div>
+            </div>
 
 
+        </div>
 
+        <div class="absolute top-1/2 -left-8 -right-6 md:-left-12 md:-right-12 flex justify-between px-4 z-50 -translate-y-1/2">
+            <!-- Prev Button -->
+            <div class="group custom-button-next cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+                data-swiper-id="slider4">
+                <i class="fa-solid fa-arrow-left text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+            </div>
 
-            <div class="swiper-button-prev" data-swiper-id="slider3"></div>
-            <div class="swiper-button-next" data-swiper-id="slider3"></div>
+            <!-- Next Button -->
+            <div class="group custom-button-prev cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+                data-swiper-id="slider4">
+                <i
+                    class="fa-solid fa-arrow-right text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+            </div>
+
         </div>
     </section>
-    
+
     <!-- DAILY BAZAR end  -->
-    
+
     <!-- Trusted Online Shop in Bangladesh start  -->
-  <section class="max-w-6xl mx-auto my-10">
-    <h1 class="text-3xl text-center my-20 font-semibold">Trusted Online Shop in Bangladesh</h1>
-    <div class="grid grid-cols-12 gap-5">
-      <!-- 1  -->
-      <div class="lg:col-span-3 md:col-span-6 max-md:col-span-12 ">
-        <div class="flex items-center justify-center">
-          <div class="w-10 mx-3">
-            <img src="images/electronics-2-free-shipping.svg" alt="">
-          </div>
-          <div class="">
-            <h3 class="text-sm">SAFE SHIPPING</h3>
-            <p class="text-xs">Fast and reliable delivery</p>
-          </div>
+    <section class="max-w-6xl mx-auto my-10">
+        <h1 class="text-3xl text-center my-20 font-semibold">Trusted Online Shop in Bangladesh</h1>
+        <div class="grid grid-cols-12 gap-5">
+            <!-- 1  -->
+            <div class="lg:col-span-3 md:col-span-6 max-md:col-span-12 ">
+                <div class="flex items-center justify-center">
+                    <div class="w-10 mx-3">
+                        <img src="images/electronics-2-free-shipping.svg" alt="">
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm">SAFE SHIPPING</h3>
+                        <p class="text-xs">Fast and reliable delivery</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2  -->
+
+
+            <div class="lg:col-span-3 md:col-span-6 max-md:col-span-12 ">
+                <div class="flex items-center justify-center">
+                    <div class="w-10 mx-3">
+                        <img src="images/electronics-2-return.svg" alt="">
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm">ON TIME DELIVERY</h3>
+                        <p class="text-xs">Consumer protection program</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3  -->
+
+
+            <div class="lg:col-span-3 md:col-span-6 max-md:col-span-12 ">
+                <div class="flex items-center justify-center">
+                    <div class="w-10 mx-3">
+                        <img src="images/electronics-2-support.svg" alt="">
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm">09 AM-06 PM CUSTOMER SUPPORT</h3>
+                        <p class="text-xs">If you have any questions</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 4  -->
+
+            <div class="lg:col-span-3 md:col-span-6 max-md:col-span-12 ">
+                <div class="flex items-center justify-center">
+                    <div class="w-10 mx-3">
+                        <img src="images/electronics-2-best.svg" alt="">
+                    </div>
+                    <div class="">
+                        <h3 class="text-sm">BEST QUALITY</h3>
+                        <p class="text-xs">Many years on the market</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- 2  -->
+    </section>
 
-
-      <div class="lg:col-span-3 md:col-span-6 max-md:col-span-12 ">
-        <div class="flex items-center justify-center">
-          <div class="w-10 mx-3">
-            <img src="images/electronics-2-return.svg" alt="">
-          </div>
-          <div class="">
-            <h3 class="text-sm">ON TIME DELIVERY</h3>
-            <p class="text-xs">Consumer protection program</p>
-          </div>
-        </div>
-      </div>
-      <!-- 3  -->
-
-
-      <div class="lg:col-span-3 md:col-span-6 max-md:col-span-12 ">
-        <div class="flex items-center justify-center">
-          <div class="w-10 mx-3">
-            <img src="images/electronics-2-support.svg" alt="">
-          </div>
-          <div class="">
-            <h3 class="text-sm">09 AM-06 PM CUSTOMER SUPPORT</h3>
-            <p class="text-xs">If you have any questions</p>
-          </div>
-        </div>
-      </div>
-      <!-- 4  -->
-
-      <div class="lg:col-span-3 md:col-span-6 max-md:col-span-12 ">
-        <div class="flex items-center justify-center">
-          <div class="w-10 mx-3">
-            <img src="images/electronics-2-best.svg" alt="">
-          </div>
-          <div class="">
-            <h3 class="text-sm">BEST QUALITY</h3>
-            <p class="text-xs">Many years on the market</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trusted Online Shop in Bangladesh end -->
+    <!-- Trusted Online Shop in Bangladesh end -->
 
     <!-- footer end  -->
     <footer class=" nefooter bg-sky-600 text-base-content p-10 mt-10">
@@ -1643,8 +1926,8 @@
                 slidesPerView: 1,
                 spaceBetween: 20,
                 navigation: {
-                    nextEl: `.swiper-button-next[data-swiper-id="${id}"]`,
-                    prevEl: `.swiper-button-prev[data-swiper-id="${id}"]`,
+                    nextEl: `.custom-button-next[data-swiper-id="${id}"]`,
+                    prevEl: `.custom-button-prev[data-swiper-id="${id}"]`,
                 },
                 breakpoints: breakpoints
             });

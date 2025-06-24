@@ -2,63 +2,196 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Swiper CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <meta charset="UTF-8">
+  <title>Perfect Dropdown</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-    <section class="w-full max-w-7xl mx-auto my-10">
-  <div class="swiper categorySwiper relative px-6">
-    <!-- Slides wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slide -->
-      <div class="swiper-slide flex flex-col items-center">
-        <img src="images/circle-1.png" alt="Spices" class="w-20 h-20 object-cover rounded-full" />
-        <p class="mt-2 text-sm text-center font-medium">SPICES</p>
-      </div>
-      <div class="swiper-slide flex flex-col items-center">
-        <img src="images/circle-2.png" alt="Oil" class="w-20 h-20 object-cover rounded-full" />
-        <p class="mt-2 text-sm text-center font-medium">OIL | তেল</p>
-      </div>
-      <!-- Add more slides as needed -->
+<body class="">
+
+  <nav class=" max-w-6xl mx-auto shadow px-6 py-4">
+    <ul class="flex justify-center space-x-8 relative z-50">
+
+      <!-- Main dropdown -->
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          All Products
+          <i class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+        </button>
+
+        <!-- Dropdown -->
+        <div
+          class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+
+          <!-- Nested dropdown -->
+          <div class="relative group/nested">
+            <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              SEO
+              <i class="fa-solid fa-angle-right text-xs transition-transform group-hover/nested:translate-x-1"></i>
+            </a>
+            <div
+              class="absolute top-0 left-full mt-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition duration-300 z-50">
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">On Page</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Off Page</a>
+            </div>
+          </div>
+
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+        </div>
+      </li>
+
+
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          Beauty Products
+          <i class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+        </button>
+        <div
+          class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+        </div>
+      </li>
+
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          Ghee
+        </button>
+      </li>
+
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          Fish & Meat
+          <i class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+        </button>
+        <div
+          class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+        </div>
+      </li>
+
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          Grocery
+          <i class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+        </button>
+        <div
+          class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+        </div>
+      </li>
+
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          Herbal
+        </button>
+      </li>
+
+
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          Honey
+          <i class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+        </button>
+        <div
+          class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+        </div>
+      </li>
+
+
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          Oil
+          <i class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+        </button>
+        <div
+          class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+        </div>
+      </li>
+
+
+      <li class="relative group">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          OFFER
+        </button>
+
+      </li>
+
+
+      <!-- store drondown nested  {to open this li please remove the "hidden"class}-->
+      <li class="relative group hidden">
+        <button class="flex items-center text-gray-800 font-semibold hover:text-blue-600">
+          Beauty Products
+          <i class="fa-solid fa-angle-down ml-1 transform transition-transform duration-300 group-hover:rotate-180"></i>
+        </button>
+
+        <!-- Dropdown -->
+        <div
+          class="absolute top-full left-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-40">
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Web Design</a>
+
+          <!-- Nested dropdown -->
+          <div class="relative group/nested">
+            <a href="#" class="flex justify-between items-center px-4 py-2 hover:bg-gray-100">
+              SEO
+              <i class="fa-solid fa-angle-right text-xs transition-transform group-hover/nested:translate-x-1"></i>
+            </a>
+            <div
+              class="absolute top-0 left-full mt-0 w-48 bg-white border rounded shadow-md opacity-0 invisible group-hover/nested:opacity-100 group-hover/nested:visible transition duration-300 z-50">
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">On Page</a>
+              <a href="#" class="block px-4 py-2 hover:bg-gray-100">Off Page</a>
+            </div>
+          </div>
+
+          <a href="#" class="block px-4 py-2 hover:bg-gray-100">Marketing</a>
+        </div>
+      </li>
+
+
+      <!-- store drondown nested end -->
+    </ul>
+  </nav>
+
+  <div class="absolute top-1/2 -left-6 -right-6 md:-left-2 md:-right-2 flex justify-between px-4 z-20 -translate-y-1/2">
+    <!-- Prev Button -->
+    <div
+      class="group custom-swiper-prev cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+      data-swiper-id="1">
+      <i class="fa-solid fa-arrow-left text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
     </div>
 
-    <!-- Arrows -->
-    <div class="swiper-button-prev !text-gray-600 !left-0"></div>
-    <div class="swiper-button-next !text-gray-600 !right-0"></div>
+    <!-- Next Button -->
+    <div
+      class="group custom-swiper-next cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+      data-swiper-id="1">
+      <i
+        class="fa-solid fa-arrow-right text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+    </div>
+            
 
-    <!-- Pagination -->
-    <div class="swiper-pagination mt-4"></div>
+    <div
+      class="swiper-button-prev group cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+      data-swiper-id="1">
+      <i class="fa-solid fa-arrow-left text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+    </div>
+
+    <!-- Next Button -->
+    <div
+      class="swiper-button-next group cursor-pointer bg-white rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-orange-500"
+      data-swiper-id="1">
+      <i
+        class="fa-solid fa-arrow-right text-lg text-gray-700 group-hover:text-white transition-colors duration-200"></i>
+    </div>
   </div>
-</section>
 
-        <script>
-  const swiper = new Swiper(".categorySwiper", {
-    slidesPerView: 5,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
-    breakpoints: {
-      640: { slidesPerView: 3 },
-      768: { slidesPerView: 4 },
-      1024: { slidesPerView: 5 },
-      1280: { slidesPerView: 6 }
-    }
-  });
-</script>
-
-<!-- swiperjs  -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-   
 </body>
 
 </html>
