@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shorobor</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/25d8830708.js" crossorigin="anonymous"></script>
+    <!-- tailwind cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Alpine.js -->
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- custom style  -->
+    <style type="text/tailwindcss">
+        @theme {
+        --color-clifford: #da373d;
+      }
+    </style>
+    <!-- swiper style  -->
+    <style>
+
+    </style>
+
+    <!-- swiperjs  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- navigation start  -->
+    <!-- Responsive navigation menu -->
+
+    <!-- dashboard start  -->
+    <section class="p-6 bg-gray-100 min-h-screen">
+        <div class="max-w-6xl mx-auto">
+            <h1 class="text-2xl font-bold mb-2">Dashboard</h1>
+            <h2 class="text-lg font-semibold mb-4">Products</h2>
+
+            <button class="bg-blue-600 hover:bg-blue-700 text-white font-medium px-4 py-2 rounded mb-4">Create
+                Product</button>
+
+            <div class="overflow-auto rounded shadow bg-white">
+                <table class="min-w-full text-sm text-left border-collapse">
+                    <thead class="bg-gray-100 text-gray-700">
+                        <tr>
+                            <th class="p-3">Name</th>
+                            <th class="p-3">Total Quantity</th>
+                            <th class="p-3">Price</th>
+                            <th class="p-3">Discount Value</th>
+                            <th class="p-3">Final Price</th>
+                            <th class="p-3">Single Piece Price</th>
+                            <th class="p-3">Category</th>
+                            <th class="p-3">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-gray-800">
+                        <tr class="border-t">
+                            <td class="p-3">Jinja</td>
+                            <td class="p-3">500</td>
+                            <td class="p-3">55000.00</td>
+                            <td class="p-3">0</td>
+                            <td class="p-3">55000.00 Tk</td>
+                            <td class="p-3">120.94 Tk</td>
+                            <td class="p-3">Spices</td>
+                            <td class="p-3 text-yellow-600 font-medium cursor-pointer">Edit</td>
+                        </tr>
+                        <tr class="border-t">
+                            <td class="p-3">Honey</td>
+                            <td class="p-3">1</td>
+                            <td class="p-3">1650.00</td>
+                            <td class="p-3">10.00%</td>
+                            <td class="p-3">1485.0000 Tk</td>
+                            <td class="p-3">13000.00 Tk</td>
+                            <td class="p-3">offers&combo</td>
+                            <td class="p-3 text-yellow-600 font-medium cursor-pointer">Edit</td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- dashboard end  -->
+
+<!-- product details  -->
+<section class="bg-white px-4 py-8 max-w-6xl mx-auto">
+  <div class="grid lg:grid-cols-2 gap-8">
+    <!-- Product Image -->
+    <div class="flex justify-center">
+      <img src="images/best-2.jpg" alt="Mehedi Powder" class="max-h-[350px] object-contain">
+    </div>
+
+    <!-- Product Info -->
+    <div>
+      <h2 class="text-2xl font-semibold">Mehedi Powder / Dust <span class="text-gray-600">(মেহেদী গুড়া)</span></h2>
+      <p class="text-xl font-bold text-green-600 mt-2">190.00৳</p>
+
+      <div class="flex gap-2 mt-4">
+        <button class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">Add to Cart</button>
+        <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded">Order via WhatsApp</button>
+      </div>
+
+      <div class="mt-3">
+        <button class="text-sm text-gray-500 hover:text-gray-700"><i class="fa-regular fa-heart"></i> Add to wishlist</button>
+      </div>
+
+      <div class="bg-blue-50 text-sm text-blue-700 p-3 mt-4 rounded">
+        5+ People watching this product now!
+      </div>
+
+      <div class="mt-4 text-sm text-gray-600">
+        <p><strong>SKU:</strong> 885785</p>
+        <p><strong>Category:</strong> Skin Care</p>
+        <p><strong>Share:</strong>
+          <span class="inline-block ml-1"><i class="fa-brands fa-facebook-f"></i></span>
+          <span class="inline-block ml-1"><i class="fa-brands fa-x-twitter"></i></span>
+          <span class="inline-block ml-1"><i class="fa-brands fa-linkedin-in"></i></span>
+          <span class="inline-block ml-1"><i class="fa-brands fa-whatsapp"></i></span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="border-b mt-10 mb-4 flex justify-center gap-6 text-sm font-medium">
+    <button class="text-blue-600 border-b-2 border-blue-600 pb-2">DESCRIPTION</button>
+    <button class="text-gray-500 hover:text-blue-600">DELIVERY PROCESS</button>
+  </div>
+
+  <!-- Description Section -->
+  <div class="text-gray-800 leading-relaxed space-y-6 text-[15px]">
+    <p>
+      শুধু হাত কিংবা চুলের রঙের জন্য নয়, ‘মেহেদী পাউডার’ হাজার বছর ধরে ব্যবহার হয়ে আসছে চুল পড়া রোধে অথবা শরীরের পুড়ে যাওয়া জায়গায়। তাই আপনাদের জন্যই আনা হয়েছে হেয়ার ফুডের পক্ষ থেকে ‘কেমিক্যাল মুক্ত’ মেহেদি পাউডার, যা তৈরি হয় সত্যিকারের মেহেদী পাতার গুঁড়ো থেকে। বর্তমান সময়ের ‘কেমিক্যাল যুক্ত’ মেহেদী পাউডার ব্যবহার করে মূহুর্তের মধ্যেই সুন্দর রঙ পেয়ে গেলেও এলার্জি, র‍্যাশ, ইনফেকশন, ইদ্যাদির সম্ভাবনা থেকেই যায়। সুতরাং, আসল মেহেদী পাউডারের উপকারিতা পেতে নিশ্চিন্তে ব্যবহার করতে পারেন।
+    </p>
+
+    <h3 class="font-bold text-lg">মেহেদী পাতার গুনাগুণ</h3>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>খুশকি দূর করতে সাহায্য করে।</li>
+      <li>মেহেদী পাতা মাথার তালু ঠান্ডা রাখতে সাহায্য করে।</li>
+      <li>চুলের গোড়া শক্ত করে এবং চুল পড়া কমায়।</li>
+    </ul>
+
+    <h3 class="font-bold text-lg">মেহেদী পাতার ব্যবহারের নিয়ম</h3>
+    <p>
+      মাথায় ভালোভাবে মেখে ৩০ মিনিট থেকে ১ ঘণ্টা রেখে ধুয়ে ফেলুন।
+    </p>
+
+    <h3 class="font-bold text-lg">কেন ব্যবহার করবেন?</h3>
+    <ul class="list-disc pl-5 space-y-1">
+      <li>নতুন চুল গজাতে সাহায্য করে।</li>
+      <li>চুলের উজ্জ্বলতা বাড়ায়।</li>
+    </ul>
+  </div>
+</section>
+
+
+
+    <!-- footer end  -->
+    <footer class=" nefooter bg-sky-600 text-base-content p-10 mt-10">
+        <div class=" max-w-6xl mx-auto">
+            <div class="grid grid-cols-12 text-white">
+
+                <!-- ABOUT THE STORE -->
+                <div class=" lg:col-span-2 max-md:col-span-6 lg:mx-auto">
+                    <h1 class="text-xl font-bold text-center ">ABOUT THE <br> STORE</h1>
+                    <h4 class="text-sm py-2 opacity-70">Got Question? Call us 09AM - 06PM</h4>
+                    <h4 class="text-xl font-bold py-2">+8801861005555</h4>
+                    <h4 class="text-xl font-bold py-2">+8801861005555</h4>
+                    <h4 class="text-sm py-2 opacity-70">info@shorobor.org</h4>
+                    <h4 class="text-sm py-2 opacity-70">Join our Telegram <br> https://t.me/shorobor</h4>
+                </div>
+                <!-- CATEGORIES  -->
+
+                <div class=" lg:col-span-2 max-md:col-span-6 lg:mx-auto">
+                    <a href="">
+                        <h2 class=" font-bold mb-5">CATEGORIES</h2>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Groceries</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Beauty Products</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Social Business</h4>
+                    </a>
+                </div>
+                <!-- OUR STORES  -->
+                <div class=" lg:col-span-2 max-md:col-span-6 lg:mx-auto">
+                    <a href="">
+                        <h2 class=" font-bold mb-5">OUR STORES</h2>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Dhaka</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Chittagong</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Sylhet</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Barisal</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Maymensingh</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Rangpur</h4>
+                    </a>
+                </div>
+                <!-- USEFUL LINKS -->
+                <div class=" lg:col-span-2 max-md:col-span-6 lg:mx-auto">
+                    <a href="">
+                        <h2 class=" font-bold mb-5">USEFUL LINKS</h2>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Privacy Policy</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Terms & Conditions</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Contact Us</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Story of Shorobor</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Career</h4>
+                    </a>
+                    <a href="">
+                        <h4 class="text-sm py-2 opacity-70">Blog</h4>
+                    </a>
+                </div>
+                <div class="lg:col-span-4 max-md:col-span-12 lg:mx-auto">
+                    <h2 class=" font-bold mb-5">AVAILABLE ON:</h2>
+                    <a href=""><img class="w-50" src="images/play.png" alt=""></a>
+                    <h2 class=" font-bold mb-5">Join our newsletter!</h2>
+
+                    <div class=" flex max-md:flex-col items-center gap-5 justify-between">
+                        <div class="">
+                            <label
+                                class="bg-transparent rounded-sm input input-bordered outline-1 outline-offset-1 flex items-center gap-2 w-40">
+
+                                <div class="">
+                                    <input type="text" class="" placeholder="Email" />
+                                </div>
+                            </label>
+                        </div>
+                        <div class="">
+                            <label
+                                class="flex items-center justify-center bg-transparent input input-bordered rounded-sm outline-1 outline-offset-1 outline-white gap-2 w-40">
+
+                                <div class="">
+                                    <input type="submit" class="" value="Subscribe" />
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+
+                    <h4 class="text-sm py-2 opacity-70">Will be used in accordance with our <a class="underline"
+                            href="">Privacy
+                            Policy</a></h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end  -->
+
+
+    <!-- swiperjs  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.querySelectorAll(".mySwiper").forEach((swiperEl) => {
+            const id = swiperEl.dataset.swiperId;
+
+            // Parse breakpoints from data attribute
+            const rawBreakpoints = swiperEl.dataset.breakpoints;
+            let breakpoints = {};
+
+            try {
+                const parsed = JSON.parse(rawBreakpoints);
+                Object.keys(parsed).forEach(key => {
+                    // breakpoints[key] = {
+                    //     slidesPerView: parsed[key],
+                    //     spaceBetween: 20  // optional: can be customized too
+                    // };
+
+                    breakpoints[parseInt(key)] = {
+                        slidesPerView: parsed[key],
+                        spaceBetween: 20
+                    };
+                });
+            } catch (e) {
+                console.warn("Invalid breakpoints JSON in slider:", id);
+            }
+
+
+            new Swiper(swiperEl, {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation: {
+                    nextEl: `.custom-button-next[data-swiper-id="${id}"]`,
+                    prevEl: `.custom-button-prev[data-swiper-id="${id}"]`,
+                },
+                breakpoints: breakpoints
+            });
+        });
+
+
+        // for nagivation 
+        document.getElementById("menuToggle").addEventListener("click", function () {
+            document.getElementById("mobileMenu").classList.remove("-translate-x-full");
+        });
+
+        document.getElementById("closeMenu").addEventListener("click", function () {
+            document.getElementById("mobileMenu").classList.add("-translate-x-full");
+        });
+
+        document.getElementById("showCategories").addEventListener("click", function () {
+            document.getElementById("categoriesContent").classList.remove("hidden");
+            document.getElementById("menuContent").classList.add("hidden");
+        });
+
+        document.getElementById("showMenu").addEventListener("click", function () {
+            document.getElementById("menuContent").classList.remove("hidden");
+            document.getElementById("categoriesContent").classList.add("hidden");
+        });
+
+
+
+        // for mobile 
+        document.addEventListener("DOMContentLoaded", () => {
+            // Handle tab buttons
+            const showCategories = document.getElementById("showCategories");
+            const showMenu = document.getElementById("showMenu");
+            const categoriesContent = document.getElementById("categoriesContent");
+            const menuContent = document.getElementById("menuContent");
+
+            showCategories.addEventListener("click", () => {
+                categoriesContent.classList.remove("hidden");
+                menuContent.classList.add("hidden");
+            });
+
+            showMenu.addEventListener("click", () => {
+                menuContent.classList.remove("hidden");
+                categoriesContent.classList.add("hidden");
+            });
+
+            // Handle all dropdowns
+            const dropdowns = document.querySelectorAll(".dropdown-container");
+
+            dropdowns.forEach(dropdown => {
+                const button = dropdown.querySelector(".dropdown-button");
+                const menu = dropdown.querySelector(".dropdown-menu");
+
+                button.addEventListener("click", (e) => {
+                    e.stopPropagation();
+
+                    // Close all other dropdowns first
+                    dropdowns.forEach(other => {
+                        if (other !== dropdown) {
+                            other.querySelector(".dropdown-menu").classList.add("hidden");
+                        }
+                    });
+
+                    menu.classList.toggle("hidden");
+                });
+            });
+
+            // Close all dropdowns when clicking outside
+            window.addEventListener("click", () => {
+                dropdowns.forEach(dropdown => {
+                    dropdown.querySelector(".dropdown-menu").classList.add("hidden");
+                });
+            });
+
+            // Optional: Close mobile menu (if needed)
+            const closeMenu = document.getElementById("closeMenu");
+            const mobileMenu = document.getElementById("mobileMenu");
+
+            if (closeMenu && mobileMenu) {
+                closeMenu.addEventListener("click", () => {
+                    mobileMenu.classList.add("-translate-x-full");
+                });
+            }
+        });
+
+
+        // for login modal 
+
+        const openModalBtn = document.getElementById("openLoginModal");
+        const closeModalBtn = document.getElementById("closeLoginModal");
+        const modal = document.getElementById("loginModal");
+        const panel = document.getElementById("loginPanel");
+
+        openModalBtn.addEventListener("click", () => {
+            modal.classList.remove("hidden");
+            panel.classList.remove("translate-x-full");
+        });
+
+        closeModalBtn.addEventListener("click", () => {
+            panel.classList.add("translate-x-full");
+            setTimeout(() => modal.classList.add("hidden"), 300);
+        });
+
+        // Optional: Close when clicking outside panel
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                panel.classList.add("translate-x-full");
+                setTimeout(() => modal.classList.add("hidden"), 300);
+            }
+        });
+
+
+        // mobile login toggol 
+        const openMobileBtn = document.getElementById("openMobileLogin");
+        const closeMobileBtn = document.getElementById("closeMobileLogin");
+        const mobileModal = document.getElementById("mobileLoginModal");
+        const mobilePanel = document.getElementById("mobileLoginPanel");
+
+        openMobileBtn.addEventListener("click", () => {
+            mobileModal.classList.remove("hidden");
+            mobilePanel.classList.remove("translate-x-full");
+        });
+
+        closeMobileBtn.addEventListener("click", () => {
+            mobilePanel.classList.add("translate-x-full");
+            setTimeout(() => mobileModal.classList.add("hidden"), 300);
+        });
+
+        // Close when clicking outside the panel
+        mobileModal.addEventListener("click", (e) => {
+            if (e.target === mobileModal) {
+                mobilePanel.classList.add("translate-x-full");
+                setTimeout(() => mobileModal.classList.add("hidden"), 300);
+            }
+        });
+    </script>
+
+</body>
+
+</html>
